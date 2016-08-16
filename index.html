@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Lucky Diner | Belltown, Seattle restaurant | Welcome to the Lucky Diner</title>
+    <title>The Lucky Restaurant & Bar | Seattle restaurant | Welcome to the Lucky Restaurant & Bar</title>
     <!-- google fonts will go here -->
 
     <!-- stylesheet made from scss -->
@@ -18,9 +18,32 @@
 
     <!-- google map here -->
 
-    <body>
-      <h1>Welcome to the Lucky Diner!</h1>
+    <body class="clearfix">
 
+      <div class="section-wrapper">
+        <section class="nav-section" id="home">
+          <header class="site-header" role="banner">
+            <span><a href="http://localhost:3000" alt="Lucky Restaurant & Bar">Lucky Restaurant & Bar</span>
+          </header>
+        </section>
+
+        <div class="wrapper nav-wrapper">
+          <nav class="site-nav" role="navigation">
+            <ul class="desktop-nav pos-ul clearfix">
+              <li class="hide"><a href="http://localhost:3000" class="scroll" data-target="#home">Home</a></li>
+              <li class="bullet">&bull;</li>
+              <li><a href="http://localhost:3000/menu" class="scroll" data-target="#menu">Menu</a></li>
+              <li class="bullet">&bull;</li>
+              <li><a href="http://localhost:3000/contact" class="scroll" data-target="#contact">Contact</a></li>
+              <li class="bullet">&bull;</li>
+            </ul>
+
+            <div class="nav-mobile" id="mobile-nav">
+              <a href="#mobile-nav" class="mobile-nav-trigger">Navigate</a>
+            </div>
+          </nav>
+          <hr />
+        </div>
 
 
     <!-- jQuery -->
