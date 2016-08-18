@@ -11,11 +11,41 @@ body {
 }
 
 .site-header{
-  margin: 0 auto;
-  background: url($background-image);
-  span img{
-    align: center;
+  span{
+    background: url($background-image);
+
+    img{
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
   }
+}
+
+.site-nav{
+  width: 100%;
+  padding-bottom: 25px;
+  ul{
+    list-style-type: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  li{
+    display: inline;
+    margin: 0;
+  }
+  a {
+    position: relative;
+    font-size: 13px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    color: $primary-color;
+    text-decoration: none;
+  }
+  /*can add underline class for cool animation here*/
 }
 
 .nav-wrapper{

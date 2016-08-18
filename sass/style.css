@@ -3,11 +3,34 @@ body {
   font: 100% Raleway, san-serif;
   background: url("../assets/grey_wash.png"); }
 
-.site-header {
-  margin: 0 auto;
+.site-header span {
   background: url("../assets/grey_wash.png"); }
   .site-header span img {
-    align: center; }
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px; }
+
+.site-nav {
+  width: 100%;
+  padding-bottom: 25px;
+  /*can add underline class for cool animation here*/ }
+  .site-nav ul {
+    list-style-type: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .site-nav li {
+    display: inline;
+    margin: 0; }
+  .site-nav a {
+    position: relative;
+    font-size: 13px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 24px;
+    color: #d6d6d6;
+    text-decoration: none; }
 
 .nav-wrapper {
   padding: 0;
