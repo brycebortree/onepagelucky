@@ -1,9 +1,25 @@
 $font-stack: Raleway, san-serif;
-$primary-color: #333;
-
+$primary-color: #d6d6d6;
+$background-image: '../assets/grey_wash.png';
+$logo-image: '../assets/whitelogo.svg';
 
 body {
   color: $primary-color;
   font: 100% $font-stack;
+  background: url($background-image);
+
 }
 
+.site-header{
+  margin: 0 auto;
+  background: url($background-image);
+  span img{
+    align: center;
+  }
+}
+
+.nav-wrapper{
+  padding: 0;
+  padding-bottom: 30px;
+  background: url($background-image);
+}

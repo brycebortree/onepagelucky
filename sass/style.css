@@ -1,5 +1,17 @@
 body {
-  color: #333;
-  font: 100% Raleway, san-serif; }
+  color: #d6d6d6;
+  font: 100% Raleway, san-serif;
+  background: url("../assets/grey_wash.png"); }
+
+.site-header {
+  margin: 0 auto;
+  background: url("../assets/grey_wash.png"); }
+  .site-header span img {
+    align: center; }
+
+.nav-wrapper {
+  padding: 0;
+  padding-bottom: 30px;
+  background: url("../assets/grey_wash.png"); }
 
 /*# sourceMappingURL=style.css.map */
