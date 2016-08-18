@@ -1,4 +1,9 @@
+$font-stack: Raleway, san-serif;
+$primary-color: #333;
+
+
 body {
-  color: #333;
-/*  background-color: black;
-*/}
+  color: $primary-color;
+  font: 100% $font-stack;
+}
+
