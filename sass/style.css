@@ -63,4 +63,13 @@ vcard {
   text-transform: uppercase;
   letter-spacing: 0.2em; }
 
+.small-icon {
+  height: 25px; }
+
+.pos-ul {
+  list-style-type: none;
+  display: block; }
+  .pos-ul li {
+    display: inline; }
+
 /*# sourceMappingURL=style.css.map */
