@@ -86,12 +86,94 @@
 
         <section class="content-block nav-section" id="menu" data-url="http://localhost:3000/menu" data-title="Contact Lucky Restaurant Seattle">
           <div>
+            <header><h1>Menu</h1></header>
+            <hr />
+          </div>
+        </section>
+
+        <section class="content-block nav-section" id="contact" data-url="http://localhost:3000/contact" data-title="The Menu at Lucky is delicious">
+          <div>
             <header><h1>CONTACT</h1></header>
             <hr />
+
+            <!-- Google Map -->
+            <script src="scripts/js/jquery-2.1.4.js"></script>
+
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfX86PBN_Z-5Mh77Vy95EQldp-z11U6gM&sensor=true"></script>
+            <script type="text/javascript">
+                jQuery(document).ready(function($){
+                    window.initialize = function initialize() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(47.65196,-122.35760),
+                            zoom: 16,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+
+                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                        var styles =
+                            [
+                              {
+                                "stylers": [
+                                  { "saturation": -100 },
+                                  { "gamma": 1 },
+                                  { "lightness": -15 }
+                                ]
+                              },{
+                                "featureType": "road.highway",
+                                "elementType": "geometry.fill",
+                                "stylers": [
+                                  { "lightness": -30 }
+                                ]
+                              },{
+                                "featureType": "road.local",
+                                "elementType": "geometry.fill",
+                                "stylers": [
+                                  { "lightness": 60 }
+                                ]
+                              }
+                            ]
+                        ;
+
+                        map.setOptions({styles: styles});
+
+                        var image = {
+                            url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker.png',
+                            size: new google.maps.Size(58, 87),
+                            origin: new google.maps.Point(0,0),
+                            anchor: new google.maps.Point(29, 87)
+                        };
+
+                        var shadow = {
+                            url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker-shadow.png',
+                            size: new google.maps.Size(59, 24),
+                            origin: new google.maps.Point(0,0),
+                            anchor: new google.maps.Point(29, 12)
+                        };
+
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(51.528597, -0.090348),
+                            map: map,
+                            shadow: shadow,
+                            icon: image
+                        });
+                    }
+
+                    if ($('#map').length > 0)
+                    {
+                        window.initialize();
+                    }
+                });
+            </script>
+
+
+
+
+
             <div class="vcard">
               <span class="street-address">2401 1st Ave NW</span><br>
               <span class="locality">Seattle, WA</span><br>
-              <span class="postal-code">98101</span><br>
+              <span class="postal-code">98107</span><br>
               <span class="tel">T. 253 655 7301</span>
             </div>
             <div class="social-links clearfix">
@@ -100,12 +182,6 @@
                 <li><a href="http://facebook.com"><img src="assets/socialicos/facebook.svg" alt="Follow Lucky on Facebook!" class="small-icon"></a></li>
                 <li><a href="http://instagram.com"><img src="assets/socialicos/instagram.svg" alt="Follow Lucky on Instagram!" class="small-icon"></a></li>
             </div>
-          </div>
-        </section>
-
-        <section class="content-block nav-section" id="contact" data-url="http://localhost:3000/contact" data-title="The Menu at Lucky is delicious">
-          <div>
-
           </div>
         </section>
 
