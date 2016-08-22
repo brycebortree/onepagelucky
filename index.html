@@ -99,73 +99,72 @@
             <!-- Google Map -->
             <script src="scripts/js/jquery-2.1.4.js"></script>
 
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfX86PBN_Z-5Mh77Vy95EQldp-z11U6gM&sensor=true"></script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfX86PBN_Z-5Mh77Vy95EQldp-z11U6gM"></script>
             <script type="text/javascript">
-                jQuery(document).ready(function($){
-                    window.initialize = function initialize() {
-                        var mapOptions = {
-                            center: new google.maps.LatLng(47.65196,-122.35760),
-                            zoom: 16,
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
+              jQuery(document).ready(function($){
+                window.initialize = function initialize() {
+                  var mapOptions = {
+                    center: new google.maps.LatLng(47.65196,-122.35760),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                  };
 
-                        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-                        var styles =
-                            [
-                              {
-                                "stylers": [
-                                  { "saturation": -100 },
-                                  { "gamma": 1 },
-                                  { "lightness": -15 }
-                                ]
-                              },{
-                                "featureType": "road.highway",
-                                "elementType": "geometry.fill",
-                                "stylers": [
-                                  { "lightness": -30 }
-                                ]
-                              },{
-                                "featureType": "road.local",
-                                "elementType": "geometry.fill",
-                                "stylers": [
-                                  { "lightness": 60 }
-                                ]
-                              }
-                            ]
-                        ;
+                  var styles =
+                    [
+                      {
+                        "stylers": [
+                          { "saturation": -100 },
+                          { "gamma": 1 },
+                          { "lightness": -15 }
+                        ]
+                      },{
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                          { "lightness": -30 }
+                        ]
+                      },{
+                        "featureType": "road.local",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                          { "lightness": 60 }
+                        ]
+                      }
+                    ]
+                  ;
 
-                        map.setOptions({styles: styles});
+                  map.setOptions({styles: styles});
 
-                        var image = {
-                            url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker.png',
-                            size: new google.maps.Size(58, 87),
-                            origin: new google.maps.Point(0,0),
-                            anchor: new google.maps.Point(29, 87)
-                        };
+                  var image = {
+                    url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker.png',
+                    size: new google.maps.Size(58, 87),
+                    origin: new google.maps.Point(0,0),
+                    anchor: new google.maps.Point(29, 87)
+                  };
 
-                        var shadow = {
-                            url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker-shadow.png',
-                            size: new google.maps.Size(59, 24),
-                            origin: new google.maps.Point(0,0),
-                            anchor: new google.maps.Point(29, 12)
-                        };
+                  var shadow = {
+                    url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker-shadow.png',
+                    size: new google.maps.Size(59, 24),
+                    origin: new google.maps.Point(0,0),
+                    anchor: new google.maps.Point(29, 12)
+                  };
 
-                        var marker = new google.maps.Marker({
-                            position: new google.maps.LatLng(51.528597, -0.090348),
-                            map: map,
-                            shadow: shadow,
-                            icon: image
-                        });
-                    }
+                  var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(51.528597, -0.090348),
+                    map: map,
+                    shadow: shadow,
+                    icon: image
+                  });
+                }
 
-                    if ($('#map').length > 0)
-                    {
-                        window.initialize();
-                    }
-                });
+                if ($('#map').length > 0)
+                {
+                  window.initialize();
+                }
+              });
             </script>
-
 
 
 
@@ -176,6 +175,8 @@
               <span class="postal-code">98107</span><br>
               <span class="tel">T. 253 655 7301</span>
             </div>
+
+            <header><h1>Follow Us</h1></header>
             <div class="social-links clearfix">
               <ul class="pos-ul clearfix">
                 <li><a href="http://twitter.com"><img src="assets/socialicos/twitter.svg" alt="Follow Lucky on Twitter!" class="small-icon"></a></li>
@@ -187,6 +188,7 @@
 
         <div class="wrapper">
           <footer class="site-footer" role="contentinfo">
+          <hr />
             <p>
               Lucky aims to be the premiere restaurant from events that range in formality from black tie to a casual Sunday brunch.
             </p>
