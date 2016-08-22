@@ -18,4 +18,34 @@ jQuery(document).ready(function(){
     pager: false,
     controls: false
   })
+
+      // Mobile Nav begin
+    $('.mobile-nav-trigger').click(function() {
+      if ($('.mobile-nav-dropdown').css('display') == 'block')
+      {
+        $('.mobile-nav-dropdown').fadeOut(200);
+      }
+      else
+      {
+        $('.mobile-nav-dropdown').fadeIn(200);
+      }
+      
+      return false;
+    });
+    
+
+    $('.mobile-nav-dropdown a').click(function() {
+      if ($('.hp').length > 0)
+      {
+        pageScroller.goTo($(this).attr('data-target'));
+        $('.mobile-nav-dropdown').fadeOut(200);
+        return false;
+      }
+      else
+      {
+        return true;
+      }
+    });
+  
+    // Mobile Nav end
 });
