@@ -1,7 +1,13 @@
+html {
+  height: 100%;
+  width: 100%; }
+
 body {
   color: #d6d6d6;
   font: 100% Raleway, san-serif;
-  background: url("../assets/grey_wash.png"); }
+  background: url("../assets/grey_wash.png");
+  height: 100%;
+  width: 100%; }
 
 .site-header span {
   background: url("../assets/grey_wash.png"); }
@@ -39,6 +45,9 @@ body {
     background: url("../assets/grey_wash.png"); }
 
   .mobile-nav-trigger {
+    display: none; }
+
+  .mobile-nav {
     display: none; } }
 h1 {
   font-size: 48px;

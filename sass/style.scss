@@ -3,11 +3,17 @@ $primary-color: #d6d6d6;
 $background-image: '../assets/grey_wash.png';
 $logo-image: '../assets/whitelogo.svg';
 
+html{
+  height: 100%;
+  width: 100%;
+}
+
 body {
   color: $primary-color;
   font: 100% $font-stack;
   background: url($background-image);
-
+  height: 100%;
+  width: 100%;
 }
 
 .site-header{
@@ -56,6 +62,10 @@ body {
   }
 
   .mobile-nav-trigger{
+    display:none;
+  }
+
+  .mobile-nav{
     display:none;
   }
 
@@ -124,7 +134,7 @@ vcard{
   .desktop-nav{
     display: none;
   }
-  
+
   .nav-mobile {
       position: relative;
       display: block;

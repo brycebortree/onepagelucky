@@ -99,74 +99,19 @@
             <!-- Google Map -->
             <script src="scripts/js/jquery-2.1.4.js"></script>
 
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6VOF1D3pItQZ7SBNYsz4coyaE_My8YDg"></script>
-            <script type="text/javascript">
-              jQuery(document).ready(function($){
-                window.initialize = function initialize() {
-                  var mapOptions = {
-                    center: new google.maps.LatLng(47.65196,-122.35760),
-                    zoom: 16,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                  };
 
-                  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            <div id="map"></div>
 
-                  var styles =
-                    [
-                      {
-                        "stylers": [
-                          { "saturation": -100 },
-                          { "gamma": 1 },
-                          { "lightness": -15 }
-                        ]
-                      },{
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                          { "lightness": -30 }
-                        ]
-                      },{
-                        "featureType": "road.local",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                          { "lightness": 60 }
-                        ]
-                      }
-                    ]
-                  ;
-
-                  map.setOptions({styles: styles});
-
-                  var image = {
-                    url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker.png',
-                    size: new google.maps.Size(58, 87),
-                    origin: new google.maps.Point(0,0),
-                    anchor: new google.maps.Point(29, 87)
-                  };
-
-                  var shadow = {
-                    url: 'http://www.fifteen.net/wp-content/themes/fifteen/images/map-marker-shadow.png',
-                    size: new google.maps.Size(59, 24),
-                    origin: new google.maps.Point(0,0),
-                    anchor: new google.maps.Point(29, 12)
-                  };
-
-                  var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(51.528597, -0.090348),
-                    map: map,
-                    shadow: shadow,
-                    icon: image
-                  });
-                }
-
-                if ($('#map').length > 0)
-                {
-                  window.initialize();
-                }
-              });
+            <script >
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 47.65196, lng: -122.35760},
+                  scrollwheel: false,
+                  zoom: 8
+                });
+              }
             </script>
-
-
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6VOF1D3pItQZ7SBNYsz4coyaE_My8YDg&callback=initMap" async defer></script>
 
 
             <div class="vcard">
@@ -197,11 +142,13 @@
         </div>
       </div>
 
-      <ul class="mobile-nav-dropdown pos-ul">
-        <li class="hide"><a href="http://theluckydiner.com.s3-website-us-west-2.amazonaws.com/" class="scroll" data-target="#home">Home</a></li>
-        <li><a href="http://theluckydiner.com.s3-website-us-west-2.amazonaws.com/menu" class="scroll" data-target="#menu">Menu</a></li>
-        <li><a href="http://theluckydiner.com.s3-website-us-west-2.amazonaws.com/contact" class="scroll" data-target="#contact">Contact</a></li>
-      </ul>
+      <div class="mobile-nav">
+        <ul class="mobile-nav-dropdown pos-ul">
+          <li class="hide"><a href="#home" class="scroll" data-target="#home">Home</a></li>
+          <li><a href="#menu" class="scroll" data-target="#menu">Menu</a></li>
+          <li><a href="#contact" class="scroll" data-target="#contact">Contact</a></li>
+        </ul>
+      </div>
 
     <!-- jQuery -->
     <script src="scripts/js/jquery-2.1.4.js"></script>
