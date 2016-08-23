@@ -92,25 +92,24 @@ vcard {
   margin: 0 auto;
   width: 50%;
   height: 34px; }
-
-.nav-mobile .mobile-nav-trigger {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  width: 100%;
-  font-family: "Gill Sans W04 Book", "Gill Sans", Helvetica, sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  border: 1px solid #111; }
+  .nav-mobile .mobile-nav-trigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: Raleway, san-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border: 1px solid #111; }
 
 .mobile-nav-dropdown {
   display: none;
@@ -120,20 +119,19 @@ vcard {
   padding: 10px 0;
   width: 100%;
   border: 1px solid #111;
-  background: #f9f8f2 url(../../images/paper-bg.jpg);
+  background: #f9f8f2 url("../assets/grey_wash.png");
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
   z-index: 100; }
-
-.mobile-nav-dropdown li {
-  text-align: center; }
-
-.mobile-nav-dropdown a {
-  display: block;
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 34px;
-  letter-spacing: 0.2em; }
+  .mobile-nav-dropdown li {
+    text-align: center; }
+  .mobile-nav-dropdown a {
+    display: block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 34px;
+    letter-spacing: 0.2em;
+    color: #d6d6d6; }
 
 /*# sourceMappingURL=style.css.map */
